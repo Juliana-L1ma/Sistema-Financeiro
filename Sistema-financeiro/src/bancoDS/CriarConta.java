@@ -87,6 +87,18 @@ public class CriarConta {
 				System.out.println("Cartão de crédito para " + cliente1.getNome());
 				System.out.println("Salário de  " + cliente1.getSalario());
 				System.out.println("Limite de " + ( cliente1.getSalario()*0.6 ));
+		
+		
+		GerenteGeral gG1= new GerenteGeral(1, 1, 1.2);
+				System.out.println("Digite a senha de segurança para ter acesso");
+				gG1.setSenha(in.nextInt());
+				
+				SistemaDeSeguranca si = new SistemaDeSeguranca(0, 0, 0);
+				si.senhaAcessoSeguro(gG1);
+		               
+	
+		
+		
 				
 		
 		
